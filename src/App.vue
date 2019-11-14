@@ -2,11 +2,16 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">About</router-link> |
+      <router-link to="/blog/">Blog</router-link>
     </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+  const butter = require('buttercms')('be87ba792e04772a2ed4347ee55695e57933c1e0');
+</script>
 
 <style lang="scss">
 #app {
